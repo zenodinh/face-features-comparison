@@ -1,5 +1,6 @@
 import enum
 import os
+import shutil
 
 import cv2
 import yaml
@@ -99,3 +100,14 @@ def create_dataset() -> bool:
 
         print("Create dataset: done")
         return True
+
+
+def clear_dataset() -> bool:
+    # Remove the folder
+    shutil.rmtree("../../dataset/train")
+    shutil.rmtree("../../dataset/test")
+
+    # Create empty folder
+    os.mkdir("../../dataset/train")
+    os.mkdir("../../dataset/test")
+    return True

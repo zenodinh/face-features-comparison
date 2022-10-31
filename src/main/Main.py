@@ -7,6 +7,7 @@ def main():
         print("Khong doc duoc file config")
         return
     print("Config: ", config)
+    clear_dataset()
     create_dataset()
 
 
