@@ -1,2 +1,3 @@
 dataset/test/
 dataset/train/
+src/methods/__pycache__/
